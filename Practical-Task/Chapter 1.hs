@@ -21,3 +21,17 @@ main :: IO ()
 main = do
  print $ doubleThenincrement 60
  --Output = 121
+
+double :: Int -> Int
+double x = x * 2
+
+increment :: Int -> Int
+increment x = x + 1
+
+doubleThenincrement :: Int -> Int
+doubleThenincrement x = increment (double x)
+
+main :: IO ()
+main = do
+ print $ doubleThenincrement 60
+ --Output = 121
