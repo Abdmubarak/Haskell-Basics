@@ -79,3 +79,10 @@ main = do
   --Output = False
   --Output = True
   --Output = False
+
+infiniteNumbers :: [Int]
+infiniteNumbers = [1..]
+
+main :: IO ()
+main = print (take 5 infiniteNumbers)
+--Output = [1,2,3,4,5]
