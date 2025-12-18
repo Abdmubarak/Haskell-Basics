@@ -104,4 +104,10 @@ main = do
   print $ fToC 98.2
   --Output = 36.77778
 
-  
+  applyTwice :: (Int -> Int) -> Int -> Int
+applyTwice f x = f (f x)
+
+main :: IO ()
+main = do
+  print (applyTwice (+1) 5)
+  --Output = 7
