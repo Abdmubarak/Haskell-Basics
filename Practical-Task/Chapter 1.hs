@@ -35,3 +35,11 @@ main :: IO ()
 main = do
  print $ doubleThenincrement 60
  --Output = 121
+
+circleArea :: Floating a => a -> a
+circleArea r = pi * r * r
+
+main :: IO ()
+main = do
+  print $ circleArea 4
+  --Output = 50.26548245743669
