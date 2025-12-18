@@ -95,3 +95,13 @@ main :: IO ()
 main = do
   print $ addNumbers 8 5
   --Output = 13
+
+fToC :: Float -> Float
+fToC f = (f - 32) * 5 / 9
+
+main :: IO ()
+main = do
+  print $ fToC 98.2
+  --Output = 36.77778
+
+  
