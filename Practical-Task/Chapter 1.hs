@@ -52,3 +52,10 @@ main = do
   print $ add 3.1 4.1
   -- Output = 7.2
   
+multiply :: Float -> Float -> Float
+multiply x y = x * y
+
+main :: IO ()
+main = do
+  print $ multiply 3.1 4.1
+  -- Output = 12.709999
