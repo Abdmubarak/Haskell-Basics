@@ -84,5 +84,14 @@ infiniteNumbers :: [Int]
 infiniteNumbers = [1..]
 
 main :: IO ()
-main = print (take 5 infiniteNumbers)
+main = do
+  print $ take 5 infiniteNumbers
 --Output = [1,2,3,4,5]
+
+addNumbers :: Int -> Int -> Int
+addNumbers x y = x + y
+
+main :: IO ()
+main = do
+  print $ addNumbers 8 5
+  --Output = 13
